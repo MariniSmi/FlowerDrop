@@ -1,0 +1,184 @@
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    
+}
+
+
+header {
+    background: #164319; /* Основной цвет */
+    padding: 1em 0;
+    box-shadow: 0 5px 10px #0000;
+}
+
+.logo img{
+    position: absolute;
+    border-left: 15px;
+    height: 40px;
+    width: 40px;
+  
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+  
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 2em;
+    background-color: #e6f7ff;
+    background-image: url('https://shop-cdn1-2.vigbo.tech/shops/2544/products/21674060/images/3-ba84e26c348f959cfd3db3bf5db82c3d.jpg')
+}
+.hero h1 {
+    color: #black;
+}
+.hero button {
+    background-color: #808080;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.hero button:hover{
+  background-color: #272727;
+}
+
+	/* Ограничение по ширине содержимого */
+		.container{
+			max-width: 1200px; /* Ширина контейнера */
+			margin: 0 auto; /* Сделаем по центру на нашей странице */
+
+		}
+
+		/* Заголовок */
+		.header{
+			text-align: center; /* Текст будет по центру */ 
+			margin-bottom: 30px; /* Делаем отступ снизу */
+		}
+
+		/* Сетка для товаров и услуг */
+		.products-grid{
+			display: grid; /* Создаем сетку */
+			grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Как колонки будут располагаться. Repeat(auto-fill) означает, что браузер будет сам автоматически создавать столько колонок, сколько сможет в себя вместить. Каждый столбец будет иметь минимальную ширину в 250 пикс. 1fr значит, что ширина столбца может быть равной одной доле доступного пространства */
+			gap: 20px; /* Отступы между карточками товаров */
+			padding: 20px; /* Внутренний отступ */
+		}
+
+		/* Карточки продукции */
+		.products-card{
+			background: white; /* Белый фон карточек товара */
+			border-radius: 6px; /* Закругляем углы */
+			padding: 20px; /* Внутренний отступ */
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0); /* Тень для карточек */
+			transition: transform 0.1s; /* Плавный переход */
+		}
+
+		/* Эффект, когда наводим на карточку */
+		.products-card:hover{
+
+			transform: translateY(-3px); /* Анимация будет подлетать к нам на 3 пикселя */
+
+		}
+
+		/* Стили для изображения товара */
+		.products-image {
+			width: 100%; /* 100% размер карточки на всю ширину */
+			height: 200px; /* Высота */
+			background: #ffff;  /* Фон для заглушки изображения */
+			margin-bottom: 15px; /* Отступ снизу */
+			border-radius: 4px; /* Скругление углов (изображения) */
+
+		}
+
+		/* Стили для названия товара */
+		.products-title{
+			font-size: 18px; /* Размер шрифта */
+			font-weight: bold; /* Жирный шрифт */
+			margin-bottom: 10px; /* Отступ снизу */
+
+		}
+
+		/* Цена товара */
+		.product-price{
+			color: #67E300 ; /* Цвет цены товара */
+			font-size: 20px; /* Размер шрифта */
+			font-weight: bold; /* Жирный шрифт */
+			display: flex;
+
+		}
+
+		/* Описание товара */
+		.products-description{
+			color: darkgreen;
+			font-size: 14px;
+			margin-bottom: 5%; /* Отступ сверху и снизу */
+			position:relative;
+
+		}
+footer {
+    text-align: left;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+}
+/* Основные стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
