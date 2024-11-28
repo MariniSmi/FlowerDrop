@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #eb4d4b;
+}
+
+body {
+  height: 100vh;
+  width: 100&;
+  background-image: url('https://img.freepik.com/free-vector/watercolor-tropical-leaves-background_52683-64400.jpg?t=st=1732747557~exp=1732751157~hmac=84aff41ff1605b5c5ad20b57cb828fe85942876cf64d493305b18d2b97c8c517&w=996');
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  color: ##0C0D0E;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.title h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+container .box {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  border-radius: 8px;
+}
+
+container .box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;  
+}
